@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CV Annisa Rufaidah</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #1d2b45;
+            scroll-behavior: smooth;
+        }
+
+        .navbar, .hero {
+            background-color: #f5f0e8;
+        }
+
+        .navbar-brand {
+            color: #1d2b45;
+            font-weight: bold;
+        }
+
+        .hero {
+            padding: 90px 0;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.2rem, 5vw, 3.5rem);
+            font-weight: bold;
+        }
+
+        .section-padding {
+            padding: 70px 0;
+        }
+
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        .profile-img {
+            width: 230px;
+            height: 270px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+
+        .btn-custom {
+            background: #1d2b45;
+            color: white;
+            padding: 11px 22px;
+            border-radius: 8px;
+        }
+
+        .btn-custom:hover {
+            background: #344766;
+            color: white;
+        }
+
+        .skill-card, .project-card {
+            border: 1px solid #e7e7e7;
+            border-radius: 14px;
+            padding: 22px;
+            height: 100%;
+            transition: 0.2s;
+        }
+
+        .skill-card:hover, .project-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px #00000010;
+        }
+
+        .soft-bg {
+            background: #faf8f4;
+        }
+
+        footer {
+            background: #1d2b45;
+            color: white;
+            padding: 22px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#home">AR.</a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu"
+                aria-controls="menu"
+                aria-expanded="false"
+                aria-label="Buka menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HOME -->
+<section class="hero" id="home">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-md-7">
+                <p class="text-secondary">HELLO, WELCOME TO MY WEBSITE</p>
+                <h1>Annisa Rufaidah</h1>
+                <h4 class="mt-3">Computer Systems Student</h4>
+
+                <p class="text-secondary mt-3">
+                    Mahasiswa Sistem Komputer yang tertarik pada
+                    teknologi, Internet of Things, robotika,
+                    dan pengembangan proyek kreatif.
+                </p>
+
+                <a href="#about" class="btn btn-custom mt-3">
+                    Kenali Saya
+                </a>
+            </div>
+
+            <div class="col-md-5 text-center">
+                <img
+                    src="https://placehold.co/460x540/EAE3D8/1D2B45?text=Your+Photo"
+                    alt="Foto profil"
+                    class="profile-img img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section-padding" id="about">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+
+        <p>
+            Halo! Saya Annisa Rufaidah, mahasiswa Program Studi
+            Sistem Komputer di Universitas Budi Luhur.
+            Saya senang mempelajari perkembangan teknologi
+            dan mengembangkan kemampuan di bidang komputer.
+        </p>
+
+        <p>
+            Saya tertarik pada Internet of Things, robotika,
+            dan computer vision. Saya ingin terus belajar,
+            bekerja sama dalam tim, dan mengembangkan ide
+            menjadi proyek yang bermanfaat.
+        </p>
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="section-padding soft-bg" id="education">
+    <div class="container">
+        <h2 class="section-title">Education</h2>
+
+        <div class="skill-card bg-white">
+            <h5>Universitas Budi Luhur</h5>
+            <p>Program Studi Sistem Komputer</p>
+            <p class="text-secondary mb-0">Pendidikan tinggi</p>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section-padding" id="skills">
+    <div class="container">
+        <h2 class="section-title">My Skills</h2>
+
+        <div class="row g-3">
+            <div class="col-md-4">
+                <div class="skill-card">
+                    <h5>Programming</h5>
+                    <p class="text-secondary">
+                        Dasar pemrograman dan logika algoritma.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="skill-card">
+                    <h5>Web Development</h5>
+                    <p class="text-secondary">
+                        HTML, CSS, dan Bootstrap.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="skill-card">
+                    <h5>Teamwork</h5>
+                    <p class="text-secondary">
+                        Komunikasi dan kerja sama tim.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section-padding soft-bg" id="projects">
+    <div class="container">
+        <h2 class="section-title">My Projects</h2>
+
+        <div class="row g-3">
+            <div class="col-md-4">
+                <div class="project-card bg-white">
+                    <h5>Website CV</h5>
+                    <p class="text-secondary">
+                        Website profil pribadi menggunakan
+                        HTML, CSS, dan Bootstrap.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="project-card bg-white">
+                    <h5>Database Project</h5>
+                    <p class="text-secondary">
+                        Contoh perancangan basis data
+                        untuk pengelolaan informasi.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="project-card bg-white">
+                    <h5>IoT & Robotics</h5>
+                    <p class="text-secondary">
+                        Bidang teknologi yang ingin
+                        dipelajari lebih lanjut.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section-padding" id="contact">
+    <div class="container text-center">
+        <h2 class="section-title">Contact Me</h2>
+
+        <p class="text-secondary">
+            Terima kasih sudah mengunjungi website profil saya.
+        </p>
+
+        <a href="mailto:emailkamu@example.com"
+           class="btn btn-custom">
+            Kirim Email
+        </a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center">
+    <div class="container">
+        <p class="mb-0">
+            &copy; 2026 Annisa Rufaidah. Personal CV Website.
+        </p>
+    </div>
+</footer>
+
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
